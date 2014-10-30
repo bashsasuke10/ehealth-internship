@@ -1,0 +1,66 @@
+1 depth first tree traversal algorithm
+
+To traverse any tree in depth first order
+ 1 perform the pre-order operation
+ 2 for each i(with i =1 to n-1) do
+        1 visit ith element if present
+		2 perform in order operation if present
+ 3 visit nth(last)child if present	
+ 4 perform post order operation
+
+where n is the number of child nodes
+
+2  
+   document.write("hello")
+var string1 = prompt("enter a string ", );
+var string2 = prompt("enter another string ", );
+		
+		
+	
+	
+function signaturefind_chars (Instring1,Instring2) {
+	for ( int i = 0; i < Instring2.length(); i++){
+		while (Instring1.length() > 0){
+			int j = 1;
+			if  ( Instring2.charAt(i) == Instring1.charAt(j) ) {
+			j++;
+			return Instring2.charAt(i); 
+			}
+			
+		}	
+	}
+}
+
+document.write(signaturefind_chars(string1, string2));
+
+
+
+
+
+
+
+
+3 A function that would remove duplicates from an array 
+
+   Array.prototype.unique= function()
+   {var unique= [];
+   for (var i=0; i<this.length;i++){
+   var current= this[i];
+   if (unique.indexof(current)<00
+   unique.push (current);
+   }
+   return unique
+   )
+   
+ 4 LCM
+ function LCM(A)
+ { var n =A.length.a=Math.abs(A[0]);
+ for(var i=1;i<n;i++)
+ {
+ var b= Math.abs(A[1])c=a;
+ while (a&&b){a>b?a%=b:b%=a};
+ a=Math.abs(c*A[i])/(a+b);
+ }
+ return a;
+ 
+ }
